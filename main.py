@@ -1,7 +1,7 @@
-from website import create_app
+from website import app
 
-app = create_app()
+app = app()
 
-# If we run this file app.run will be excuted
-if __name__ == 'main':
+# Correct the condition for running the script
+if __name__ == '__main__':
     app.run(debug=True)
