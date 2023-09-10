@@ -11,6 +11,6 @@ def app():
     from .auth import auth
 
     app.register_blueprint(views, url_perfix='/')
-    app.register_blueprint(auth, url_perfix='/')
+    app.register_blueprint(auth, url_perfix='/auth')
 
     return app
